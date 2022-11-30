@@ -1,0 +1,48 @@
+@use "variables" as *;
+// @use variables to link scss sheets that require each other
+
+.categoryGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .items{
+        flex-basis: 40%;
+        padding: 45px;
+        border-radius: 10%;
+        margin: 50px 25px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        img{
+            max-width: 100%;
+            border-radius: 10%;
+            margin-bottom: 20px;
+        }
+        &:hover {
+            transform: scale(0.95); /* &: to target all items in item */
+        }
+        &:focus{
+            transform: scale(0.95);
+        }
+    }
+}
+
+.itemOne {
+    background-color: $quinary;
+}
+
+.itemTwo {
+    background-color: $secondary;
+}
+
+.itemThree {
+    background-color: $tertiary;
+}
+
+.itemFour {
+    background-color: $quaternary;
+}
