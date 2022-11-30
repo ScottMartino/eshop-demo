@@ -513,8 +513,64 @@ footer .footerNav nav a:focus {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   padding: 45px;
-  border-radius: 10%;
   margin: 50px 25px 25px;
+  border-radius: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.categoryGallery .items img {
+  max-width: 100%;
+  border-radius: 10%;
+  margin-bottom: 20px;
+}
+.categoryGallery .items:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.categoryGallery .items:focus {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.categoryGallery .itemOne {
+  background-color: #ffd698;
+}
+.categoryGallery .itemTwo {
+  background-color: #f4fcff;
+}
+.categoryGallery .itemThree {
+  background-color: #f8fbf3;
+}
+.categoryGallery .itemFour {
+  background-color: #fff5f5;
+}
+
+.play {
+  background-image: url(../assets/background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+.play .playContainer {
+  max-width: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,39 +581,9 @@ footer .footerNav nav a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-.categoryGallery .items img {
-  max-width: 100%;
-  border-radius: 10%;
-  margin-bottom: 20px;
-}
-.categoryGallery .items:hover {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95); /* &: to target all items in item */
-}
-.categoryGallery .items:focus {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-}
-
-.itemOne {
-  background-color: #ffd698;
-}
-
-.itemTwo {
-  background-color: #f4fcff;
-}
-
-.itemThree {
-  background-color: #f8fbf3;
-}
-
-.itemFour {
-  background-color: #fff5f5;
+  padding: 70px 45px;
+  border: 24px solid #f4fcff;
+  background-color: #fff;
 }
 
 @media (max-width: 1000px) {
