@@ -13,7 +13,7 @@
 	<nav class="navBar">
 		<div class="wrapper">
 			<button class="menuIcon">
-				<img src="./assets/menu-button.svg" alt="open slide-out navigation">
+				<img src="./assets/menu-button.svg" alt="open slide-out navigation" class="menuIcon">
 			</button>
 			<a href="#" class="logo">
 				<h1>Toybox</h1>
@@ -28,13 +28,13 @@
 				<div class="counter">
 					<p class="smallCopy">0</p>
 				</div>
-			</div> <!-- .searchCart end -->
-		</div> <!-- .wrapper end -->
+			</div>
+		</div> 
 
 		<div class="slideOutNav">
 			<div class="buttonContainer">
 				<button>
-					<img src="./assets/menu-close.svg" alt="close navigation">
+					<img src="./assets/menu-close.svg" alt="close navigation" class="menuIcon2">
 				</button>
 			</div>
 			<nav>
@@ -47,8 +47,8 @@
 				</ul>
 			</nav>
 		</div>
-	</nav> <!-- nav end -->
-
+	</nav>
+<!-- End of Nav -->
 	<header>
 		<div class="headerImgContainer wrapper">
 			<img src="./assets/header-image.jpg"
@@ -64,7 +64,7 @@
 			</div>
 		</div>
 	</header>
-
+<!-- End of Header -->
 	<main>
 		<section class="categories" id="categories">
 			<div class="wrapper">
@@ -111,8 +111,8 @@
 				<button class="solid">Learn About Us</button>
 			</div>
 		</section>
-	</main> <!-- main end -->
-
+	</main>
+<!-- End of Main -->
 	<footer id="footer">
 		<div class="wrapper">
 			<div class="footerFlexContainer">
@@ -173,10 +173,33 @@
 							</li>
 						</ul>
 					</nav>
-				</div> <!-- .footerNav END -->
-			</div> <!-- .footerFlexContainer END-->
-		</div> <!-- .wrapper END-->
+				</div> 
+			</div> 
+		</div> 
 	</footer>
-</body>
 
+	<script>
+		const openEl = document.querySelector('img.menuIcon')
+		openEl.addEventListener('click', function(){
+			slideout()
+		});
+
+		function slideout(){
+			const navEl = document.querySelector('.slideOutNav')
+			navEl.style.left= "0px";
+		};
+
+		const closeEl = document.querySelector('img.menuIcon2')
+		closeEl.addEventListener('click', function(){
+			slidein()
+			console.log('dsfsdf')
+		});
+
+		function slidein(){
+			const navEl = document.querySelector('.slideOutNav')
+			navEl.style.left = "-501px";
+		};
+	</script>
+<!-- End of JavaScript -->
+</body>
 </html>
